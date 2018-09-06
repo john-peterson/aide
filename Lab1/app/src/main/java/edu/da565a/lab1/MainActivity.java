@@ -1,4 +1,4 @@
-package com.da565a.lab1;
+package edu.da565a.lab1;
 
 import android.app.*;
 import android.os.*;
