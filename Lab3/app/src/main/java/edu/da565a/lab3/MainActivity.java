@@ -44,8 +44,22 @@ public class MainActivity extends Activity
 				public void onLongPress(MotionEvent e)
 				{
 					tv1.setText("Long press");
-					super.onLongPress(e);
 				}
+				
+				@Override
+				public boolean onFling(MotionEvent event1, MotionEvent event2,
+									   float velocityX, float velocityY) {
+					tv1.setText("Fling");
+					return true;
+				}
+
+				@Override
+				public boolean onScroll(MotionEvent event1, MotionEvent event2, float distanceX,
+										float distanceY) {
+					tv1.setText("Scroll");
+					return true;
+				}
+				
 			});
     }
 
